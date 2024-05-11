@@ -20,11 +20,11 @@ class Tree:
                 self.right.insert(key)
     
     def print_tree(self):
-        if self.left is not None:
-            self.left.print_tree()
-        print(self.key)
         if self.right is not None:
             self.right.print_tree()
+        print(self.key)
+        if self.left is not None:
+            self.left.print_tree()
 
 
 tree = Tree()
